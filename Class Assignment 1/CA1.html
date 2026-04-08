@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Processor</title>
+    <link rel="stylesheet" href="CA1.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Records Management Tracker</h1>
+
+        <div class="form-group">
+            <input type="text" id="studentName" placeholder="Student Name">
+            <input type="number" id="rollNumber" placeholder="Roll Number">
+            <input type="number" id="mathMarks" placeholder="Math Marks">
+            <input type="number" id="scienceMarks" placeholder="Science Marks">
+            <input type="number" id="englishMarks" placeholder="English Marks">
+            <button class="btn-add" onclick="addStudent()">Add Student Record</button>
+        </div>
+
+        <hr>
+
+        <div class="button-grid">
+            <button onclick="displayAll()">Display All Students</button>
+            <button onclick="displayHighAchievers()">Average > 80</button>
+            <button onclick="displayFailed()">Failed (Avg < 40)</button>
+            <button onclick="showTotalCount()">Total Student Count</button>
+        </div>
+
+        <div id="outputArea" class="output-container">
+            <p class="placeholder">Results will appear here...</p>
+        </div>
+    </div>
+
+    <script src="CA1.js"></script>
+</body>
+</html>

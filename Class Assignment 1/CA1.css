@@ -1,0 +1,137 @@
+
+:root {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;         
+    --text-main: #f8fafc;        
+    --text-muted: #94a3b8;       
+    --accent-primary: #6366f1;  
+    --accent-success: #10b981;   
+    --accent-danger: #ef4444;    
+    --input-bg: #334155;         
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    margin: 0;
+}
+
+.container {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 550px;
+    border: 1px solid #334155;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    letter-spacing: -0.5px;
+}
+
+/* Form Styling */
+.form-group input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    background: var(--input-bg);
+    border: 1px solid #475569;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    transition: border 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+}
+
+.btn-add {
+    width: 100%;
+    background-color: var(--accent-success);
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.2s;
+}
+
+.btn-add:hover {
+    background-color: #059669;
+    transform: translateY(-1px);
+}
+
+/* Action Buttons Grid */
+.button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.button-grid button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--accent-primary);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-grid button:hover {
+    background-color: #4f46e5;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+/* Output Display Area */
+.output-container {
+    margin-top: 25px;
+    padding: 20px;
+    background: #0f172a; /* Darker contrast for output */
+    border-radius: 12px;
+    border: 1px dashed #475569;
+    min-height: 100px;
+}
+
+.student-card {
+    border-bottom: 1px solid #334155;
+    padding: 12px 0;
+}
+
+.student-card:last-child {
+    border-bottom: none;
+}
+
+.placeholder {
+    color: var(--text-muted);
+    text-align: center;
+    font-size: 14px;
+}
+
+h3 {
+    margin-top: 0;
+    color: var(--accent-primary);
+    font-size: 1.1rem;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #334155;
+    margin: 20px 0;
+}
